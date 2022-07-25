@@ -1,0 +1,340 @@
+/*{
+    outline: 1px solid greenyellow;
+}*/
+body{
+    margin: 0;
+    height: 100%;
+    font-family:'Times New Roman', Times, serif;
+}
+/*navbar et les 2 autres header*/
+.header-contact{
+    background: url("../images/visuel/visuel_3.jpg");
+    height: 360px;
+    margin-bottom: 50px;
+}
+.header-presentation{
+    background: url("../images/visuel/visuel_2.jpg");
+    height: 360px;
+    margin-bottom: 50px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+} 
+.nav-link:hover{
+  background-color: #CBAC6C;
+  background-size: 30px;
+  color: white !important;
+}
+.nav-item{
+    font-size: 20px;
+}
+.iconify{
+    font-size: 20px;
+    color: white;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+/*POUR QUE LE BURGER N'APPARAISSE PAS EN VERSION PC*/
+.burger{
+    display: none !important;
+}
+span.cachée{
+    display: none;
+    color: red;
+}
+/*bouton rond des sliders*/
+.carousel-indicators li {
+    border-radius: 50%;
+    width: 12px !important;
+    height: 12px !important;
+}
+  /*BARRE SCROLL*/
+.nav-active {
+    background-color: red;
+    opacity: 50%;
+    transition: 0.5s ease-in-out;
+}
+/*NAVBAR END*/
+/*les width*/
+.w-90{
+    width: 90%;
+}
+.w-100{
+    width: 100%;
+}
+.w-10{
+    width: 5%;
+}
+.w-80{
+    width: 80%;
+}
+/*fin des width*/
+/*CARD ET BOUTON*/
+.activité {
+    width: 100%;
+    height: 350px;
+}
+.btn{
+    background-color: #CBAC6C !important;
+    border: 1px solid #CBAC6C !important;
+}
+.background-1{
+    background: url("../images/activites/bg_activite_1.jpg");
+    height: 360px;
+}
+.background-2{
+    background: url("../images/activites/bg_activite_2.jpg");
+    height: 360px;
+}
+.background-3{
+    background:url("../images/activites/bg_activite_3.jpg");
+    height: 360px;
+}
+.background-4{
+    background:url("../images/activites/bg_activite_4.jpg");
+    height: 360px;
+} 
+.image-card{
+    height: 280px;
+}
+.card{
+    border: none !important;
+}
+/* A LA PLACE DES HR, DEUX CATEGORIES CAR CERTAINS H3 N EN ONT PAS*/
+h3{
+    position: relative;
+    margin-bottom: 15px;
+}
+h3::after{
+    position: absolute;
+    content: "";
+    border:#CBAC6C 2px solid;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    width: 10%;
+    height: 2px;
+    margin: auto;
+}
+.coor{
+    position: relative;
+    margin-bottom: 25px;
+}
+.coor::after{
+    position: absolute;
+    content: "";
+    border-bottom:#CBAC6C 2px solid;
+    left: 0;
+    right: 100%;
+    bottom: -20px;
+    width: 15%;
+    height: 2px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+/*EFFET/ANIMATION*/
+.savoir{
+    position: relative;
+    color: white; 
+    text-decoration: none; 
+}
+.savoir:after {
+    position: absolute;
+    background: white;
+    content: '';
+    height: 2px;
+    bottom: -10px; 
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 25%;
+
+   -o-transition:.5s;
+   -ms-transition:.5s;
+   -moz-transition:.5s;
+   -webkit-transition:.5s;
+   transition:.5s;
+}
+.savoir:hover{
+    color: white;
+    text-decoration: none;
+}
+.savoir:hover:after {
+   width: 120px;
+   background: white;
+}   
+.underline {
+    position: relative;
+    color: black; 
+    text-decoration: none;
+}   
+.underline:after {
+     position: absolute;
+     background: black;
+     content: '';
+     height: 2px;
+     bottom: -10px; 
+     margin: 0 auto;
+     left: 0;
+     right: 0;
+     width: 25%;
+
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.underline:hover{
+    color: black;
+    text-decoration: none;
+}
+.underline:hover:after {
+   width: 100%;
+   background: black;
+  
+}
+.ligne:after {  
+     background:black;
+     content: '';
+     height: 2px;
+     bottom: -4px; 
+     margin: 0 auto;
+     left: 0;
+     right: 0;
+     width: 25%;
+}
+.ligne:hover:after {
+   width: 100%;
+}
+.cliquez-ici{
+    color: #DAA520;
+    text-decoration: underline;
+}
+.cliquez-ici:hover{
+    color: white;
+}
+.corporate li:hover {
+    color: #DAA520;
+    text-decoration: underline;
+}
+/*footer*/
+.background{
+    background-color: black;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+}
+.li{
+    list-style: none;
+    color: white;
+}
+.logo{
+    gap: 30px;
+}
+/* FIN footer*/
+
+/*FORMULAIRE*/
+.controlDanger{
+    border: solid 1px red;
+}
+.controlSuccess{
+    border: solid 1px green;
+} 
+ /*FORMULAIRE END*/ 
+@media screen and (max-width:768px) {
+    /*navbar ET MENU BURGER*/
+.menu { 
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    width:0;
+    position:absolute;
+    left: 0;
+    top:90px;
+    height: calc(100vh - 90px);   
+    background:red;    
+    opacity: 70%; 
+    transform: translateX(110%);
+    transition: all .5s ease-in-out;
+  }
+  .menu .nav-item{
+    padding-left: 15px;
+  }
+  .show-nav .menu { 
+    width:100vw;    
+    transform: translateX(0);
+  } 
+  .show-nav .bar{
+    width: 0;
+    background-color: transparent;
+  }
+  .show-nav .navbar__link  {        
+    transform: translateX(0);    
+  }   
+  .show-nav .bar::before{
+    transform: rotate(45deg);
+  }
+  .show-nav .bar::after{
+    transform: rotate(-45deg);
+  }
+  /* Toggle menu */
+  .burger {
+    display: block !important;;
+    position: relative;
+    background: transparent;
+    padding:0;
+    width:45px;
+    height:45px;
+    border: none !important;
+}
+  .bar {
+    display:block !important;    
+    width:45px;
+    height:4px;  
+    border-radius:3px;
+    background :white; 
+    transition: all .5s ease-in-out;   
+  }
+  .bar::before, .bar::after {
+    content:"";
+    width:45px;
+    height:4px;
+    position:absolute; 
+    left:0;  
+    background: white; 
+    border-radius:3px;    
+    transition: all .5s ease-in-out;
+  }
+  .bar::before {
+    transform:translateY(-12px)
+  }
+  .bar::after {
+    transform:translateY(12px)
+  }
+
+  
+/*NAVBAR END*/
+    .coor::after{
+    margin-left: 110px;
+  }
+  .card{
+        text-align: center;
+  }
+  .row{
+        text-align: center;
+  }
+  .header-contact{
+    width: 100%;
+    height: 100px;
+  }
+  .header-presentation{
+    width: 100%;
+    height: 100px;
+  }
+}
+   

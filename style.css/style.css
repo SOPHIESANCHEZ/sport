@@ -41,10 +41,7 @@ body{
 .burger{
     display: none !important;
 }
-span.cachée{
-    display: none;
-    color: red;
-}
+
 /*bouton rond des sliders*/
 .carousel-indicators li {
     border-radius: 50%;
@@ -239,16 +236,20 @@ h3::after{
 /* FIN footer*/
 
 /*FORMULAIRE*/
+span.cachée{
+    display: none;
+    color: red;
+}
 .controlDanger{
-    border: solid 1px red;
+    border: solid 1px red !important;
 }
 .controlSuccess{
-    border: solid 1px green;
+    border: solid 1px green !important;
 } 
  /*FORMULAIRE END*/ 
 @media screen and (max-width:768px) {
     /*navbar ET MENU BURGER*/
-.menu { 
+ .menu { 
     overflow:hidden;
     display:flex;
     flex-direction:column;
@@ -291,7 +292,7 @@ h3::after{
     width:45px;
     height:45px;
     border: none !important;
-}
+  }
   .bar {
     display:block !important;    
     width:45px;
@@ -319,7 +320,7 @@ h3::after{
 
   
 /*NAVBAR END*/
-    .coor::after{
+  .coor::after{
     margin-left: 110px;
   }
   .card{

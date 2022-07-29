@@ -80,20 +80,20 @@
             </div>
             <div class="col-md-8">
                 <h3 class="coor">FORMULAIRE DE CONTACT</h3>
-                <form action="GET" id="myForm">
+                <form method="GET" action="" id="myForm">
                     <div class="row mb-1">
                         <div class="col-md-7">
                             <div class="form-outline">
                                 <input type="text" id="nom" class="form-control bg-light" placeholder="VOTRE NOM"/>
                                 <span id="errorName"></span>
-                                <label class="form-label" id="name"></label>
+                                <label class="form-label" id="nom"></label>
                             </div>
                         </div>
                         <div class="col-md-5">
                             <div class="form-outline">
                                 <input type="text" id="prenom" class="form-control bg-light " placeholder="VOTRE PRENOM"/>
                                 <span id="errorFirstName"></span>
-                                <label class="form-label" id="surname"></label>
+                                <label class="form-label" id="prenom"></label>
                             </div>
                         </div>
                     </div>
@@ -102,12 +102,12 @@
                             <div class="form-outline mb-2">
                                 <input type="email" id="email" class="form-control bg-light" placeholder="VOTRE EMAIL"/>
                                 <span id="errorEmail"></span> 
-                                <label class="form-label" id="mail"></label>
+                                <label class="form-label" id="email"></label>
                             </div>
                         </div>
                         <div class="col-md-7">
                             <div class="form-outline mb-2">
-                                <input type="number" id="numero" class="form-control bg-light" placeholder="VOTRE TELEPHONE"/>
+                                <input type="number" id="number" class="form-control bg-light" placeholder="VOTRE TELEPHONE"/>
                                 <span id="errorTel"></span>
                                 <label class="form-label" id="number"></label>
                             </div>
@@ -116,7 +116,7 @@
                     <div class="form-outline mb-1">
                         <input type="text" id="sujet" class="form-control bg-light" placeholder="SUJET"/>
                         <span id="errorSujet"></span>
-                        <label class="form-label" id="suj"></label>
+                        <label class="form-label" id="sujet"></label>
                     </div>
                     <div class="form-outline mb-4">
                         <textarea class="form-control bg-light" id="message" rows="4" placeholder="MESSAGE"></textarea>
@@ -180,7 +180,9 @@
                 </footer>
             </section>  
         </div>
-        <script src="./main.js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./main.js/jquery.js"></script>
+        <!-- <script src="./main.js/_old.js"></script> -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
         <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>

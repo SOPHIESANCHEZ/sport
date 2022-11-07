@@ -10,7 +10,7 @@
                     </ul>
                     <ul class="list-unstyled">
                         <li class="font-weight-bold">Téléphone</li>
-                        <li><a href="tel:0559478418">05 59 47 84 18</a></li>
+                        <li class="text-black"><a href="tel:0559478418">05 59 47 84 18</a></li>
                     </ul>
                     <ul class="list-unstyled">
                         <li class="font-weight-bold">Horaires</li>
@@ -30,10 +30,10 @@
                 <form method="POST" action="verif_contact.php" id="myForm">
                <?php  if (isset($_GET['add']) && $_GET['add'] == 1) : ?>  
                     <div class= "alert alert-success">MESSAGE ENVOYE</div>
-                    <?php header("refresh:2; url=index.php")?>   
+                  
                 <?php  elseif (isset($_GET['add']) && $_GET['add'] == 0) : ?>  
                     <div class= "alert alert-danger">MESSAGE NON ENVOYE</div>
-                    <?php header("refresh:2; url=index.php")?>   
+          
                 <?php endif; ?>
                     <div class="row mb-1">
                         <div class="col-md-7">

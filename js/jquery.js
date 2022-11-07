@@ -23,12 +23,12 @@ function toggleMenu (){
     $(this).scroll(function () {
       var scroll = $(this).scrollTop();
       if (scroll > 100) {
-        $(".navbar").css("background", "red");
+        $(".navbar").css({"background": "#CBAC6C", "opacity":"0.7"});
       } else {
         $(".navbar").css("background", "");
       }
     });
-  
+   
    /*function changeColorOnScroll(){
     const navbar = document.querySelector('.nav-fixed'); 
     window.onscroll = () => {

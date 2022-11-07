@@ -52,8 +52,8 @@ body{
 }
   /*BARRE SCROLL*/
 .nav-active {
-    background-color: red;
-    opacity: 50%;
+    background-color:#CBAC6C;
+    opacity: 0.70 !important;
     transition: 0.5s ease-in-out;
 }
 /*NAVBAR END*/
@@ -240,7 +240,7 @@ h3::after{
 /*FORMULAIRE*/
 span.cachée{
     display: none;
-    color: red;
+    color:red ;
 }
 .controlDanger{
     border: solid 1px red !important;
@@ -260,7 +260,7 @@ span.cachée{
     left: 0;
     top:90px;
     height: calc(100vh - 90px);   
-    background:red;    
+    background:#CBAC6C;    
     opacity: 70%; 
     transform: translateX(110%);
     transition: all .5s ease-in-out;
@@ -320,7 +320,9 @@ span.cachée{
     transform:translateY(12px)
   }
 
-  
+  .photos{
+    display: none !important;
+  }
 /*NAVBAR END*/
   .coor::after{
     margin-left: 110px;

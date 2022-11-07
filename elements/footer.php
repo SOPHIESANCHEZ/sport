@@ -30,12 +30,13 @@
         
 <footer class="container-fluid p-0">
 <div class="footer bg-dark mt-7">
-                <div class="row photos d-flex justify-content-center align-items-center w-100 m-auto mt-5 mb-5 no-gutters">
-
-                <?php  
-                img_add("img-fluid", "./images/coach/coach_");
-                ?>
-                   
+                <div class="row photos justify-content-center align-items-center w-100 m-auto mt-5 mb-5 no-gutters">
+                    <div class="col-2 p-0"><img class="img-fluid" src="./images/coach/coach_1.jpg" alt="photos"></div>
+                    <div class="col-2 p-0"><img class="img-fluid" src="./images/coach/coach_2.jpg" alt="photos"></div>
+                    <div class="col-2 p-0"><img class="img-fluid" src="./images/coach/coach_3.jpg" alt="photos"></div>
+                    <div class="col-2 p-0"><img class="img-fluid" src="./images/coach/coach_4.jpg" alt="photos"></div>
+                    <div class="col-2 p-0"><img class="img-fluid" src="./images/coach/coach_5.jpg" alt="photos"></div>
+                    <div class="col-2 p-0"><img class="img-fluid" src="./images/coach/coach_6.jpg" alt="photos"></div>
                 </div>
                 <div class="row justify-content-between align-items-center w-90 m-auto text-white mt-5 mb-5">
                     <div class="col-md-4 a-propos mt-5 mb-5">
@@ -79,6 +80,7 @@
                         <div class="Two"><img src="./images/364.png" alt=""></div>
                     </div>
                 </div>
+            </div>
             </footer>
             <!-- fin du sous footer -->
         </section>
@@ -90,8 +92,8 @@
     
             <!-- un sous footer pour pouvoir le dupliquer sur les autres pages -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./main.js/jquery.js"></script>
-    <!-- <script src="./main.js/_old.js"></script>   -->
+    <script src="./js/jquery.js"></script>
+    <!-- <script src="./js/_old.js"></script>   -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"crossorigin="anonymous"></script>   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>

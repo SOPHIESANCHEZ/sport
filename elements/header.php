@@ -26,17 +26,17 @@
                             <?php endif ?>
         <!-- début de la navbar avec plusieurs div pemettant de faire des widht différentes -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top w-100 m-auto d-flex justify-content-between align-items-center nav-fixed">
-            <a class="navbar-brand logo-navbar ml-5" href="./index.php"><img class="logo" src="./images/logo.png" alt="#"></a>
+            <a class="navbar-brand logo-navbar ml-5" href="./index.php"><img class="logo" src="./images/logo_2.png" alt="#"></a>
                 <div class="menu d-flex justify-content-around align-items-center w-100">
-                <ul class="navbar-nav menu m-auto">
+                <ul class="navbar-nav menu m-auto pr-3">
                    
                 <?php 
                  echo add_menu("nav-item text-white","nav-link", "./error_404.html", "L'EQUIPE");
-                 echo add_menu("nav-item text-white","nav-link", "./error_404.html", "LES ACTIVITES");
+                 echo add_menu("nav-item text-white","nav-link", "./presentation.php", "LES ACTIVITES");
                  echo add_menu("nav-item text-white","nav-link", "./error_404.html", "NOS OFFRES");
                  echo add_menu("nav-item text-white","nav-link", "./error_404.html", "PLANNING");
                  echo add_menu("nav-item text-white","nav-link", "./error_404.html", "LE BLOG");
-                 echo add_menu("nav-item text-white","nav-link", "./error_404.html", "CONTACT");
+                 echo add_menu("nav-item text-white","nav-link", "./contact.php", "CONTACT");
 
                 ?>
 
@@ -70,11 +70,11 @@
                         <a class="nav-link text-white" href="./contact.php">CONTACT</a>
                     </li>
                 </ul>        -->
-                    <div class="tel nav-item w-7 m-auto">
+                    <div class="tel nav-item w-7 m-auto pr-5 pl-4">
                         <a class="nav-link  text-white" href="./error_404.html">
                         <i class="iconify" data-icon="clarity:mobile-solid"></i> 05 59 47 84 18</a>
                     </div>
-                <ul class="reseaux list-unstyled mb-0"> 
+                <ul class="reseaux list-unstyled mb-0 mt-1 pr-5"> 
                     <?php 
                     echo add_reseau("d-inline-block nav-item","https://www.facebook.com/", "iconify", "ant-design:facebook-filled");
                     echo add_reseau("d-inline-block nav-item","https://www.instagram.com/?hl=fr&__coig_restricted=1", "iconify", "ant-design:instagram-outlined");

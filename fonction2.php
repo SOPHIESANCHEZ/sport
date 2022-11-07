@@ -1,6 +1,6 @@
 
 <?php
-function img_add(string $class_img, $url, $nb_img = 4) : void {
+function img_add(string $class_img, $url, $nb_img = 7) : void {
     for ($i = 1; $i < $nb_img; $i++){
 echo <<<HTML
 
